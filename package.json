@@ -1,0 +1,10 @@
+{
+  "name": "vue3-sample",
+  "version": "1.0.0",
+  "description": "Vue3 Sample App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "subroh_0508"
+}
