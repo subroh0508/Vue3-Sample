@@ -10,6 +10,8 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
     "express": "^4.17.1",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
     "vue-loader": "^16.0.0-0",
@@ -23,7 +25,7 @@
     "vue": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:client": "yarn run webpack-dev-server --config scripts/webpack.client.js"
   },
   "author": "subroh_0508",
   "license": "MIT"
