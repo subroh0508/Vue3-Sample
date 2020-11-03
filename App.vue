@@ -1,13 +1,12 @@
 <script>
+import HelloWorld from './components/HelloWorld';
+
 export default {
-  data: () => ({ msg: 'Hello, World' }),
+  components: {
+    HelloWorld,
+  },
 }
 </script>
 <template>
-  <div class='msg'>{{ msg }}</div>
+  <hello-world/>
 </template>
-<style scoped lang='scss'>
-.msg {
-  color: red;
-}
-</style>
