@@ -19,7 +19,6 @@ module.exports = merge(common, {
     alias: {
       vue: '@vue/runtime-dom/dist/runtime-dom.cjs.js',
     },
-    mainFields: ['main', 'module'], // https://github.com/vuejs/vue-next/issues/2244
   },
   module: {
     rules: [
