@@ -1,5 +1,12 @@
 import { h, createApp } from 'vue';
 
 import App from './App';
+import { createClientRouter } from './router';
 
-createApp({ render: () => h(App) }).mount('#app');
+const router = createClientRouter();
+const app = createApp({ render: () => h(App) });
+
+app.use(router)
+
+router.isReady().then(() => { app.mount('#app'); });
+

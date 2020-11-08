@@ -6,7 +6,9 @@ import serverBundle from './build/server/server.bundle.js';
 const server = express();
 
 server.get("*", async (req, res) => {
-  const app = serverBundle();
+  const { app, router } = serverBundle();
+  router.push(req.url);
+  await router.isReady();
   const appContent = await renderToString(app);
 
   const html = `

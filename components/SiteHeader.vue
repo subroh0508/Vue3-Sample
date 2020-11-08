@@ -14,7 +14,7 @@ export default {
   }),
   methods: {
     redirectTo(name) {
-      console.log(name);
+      this.$router.push({ name });
     },
   },
 }
